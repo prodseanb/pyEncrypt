@@ -1,0 +1,7 @@
+colorama==0.4.3
+cryptography==2.8
+pycrypto==2.6.1
+pycryptodome==3.10.1
+pycryptodomex==3.10.1
+pyfiglet==0.8.post1
+termcolor==1.1.0
