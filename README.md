@@ -1,5 +1,5 @@
 # Encryption
-Encrypt a string in aes, md5, base64, caesar cipher, sha256, rot13, and hex.
+Encrypt data in aes, md5, base64, caesar cipher, sha256, rot13, and hex.
 ### Install Requirements
 To run this project, use the package manager [pip](https://pip.pypa.io/en/stable/installing/) to install these modules:
 - PyCryptodome
