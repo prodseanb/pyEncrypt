@@ -1,7 +1,7 @@
 # Encryption
 Encrypt a string in aes, md5, base64, caesar cipher, sha256, rot13, and hex.
 ### Install Requirements
-To run this project follow this setup:
+To run this project follow this setup.
 Use the package manager [pip](https://pip.pypa.io/en/stable/installing/) to install these modules:
 #### PyCryptodome
 ```bash
@@ -23,7 +23,7 @@ pip3 install pyfiglet
 pip install colorama
 pip3 install colorama
 ```
-### Clone Repository and Execute
+### Clone repository and execute
 ```bash
 git clone https://github.com/prodseanb/Encryption.git
 python encryption.py
