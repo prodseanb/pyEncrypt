@@ -79,7 +79,7 @@ def md5():
 def hex():
 	text_to_hex = input('Enter the text to be encrypted: ').encode('utf-8')
 	encrypted_text = text_to_hex.hex()
-	print(encrypted_text)
+	print('\n', encrypted_text)
 
 #ascii-art
 cprint(figlet_format('Encryption', font='isometric1'),
