@@ -21,8 +21,8 @@ The objective of this program is to take data input and encrypt it in one the fo
 - hex
 - base64
 ### License
-[MIT](https://github.com/prodseanb/Encryption/blob/master/LICENSE)
-MIT License
+[MIT License](https://github.com/prodseanb/Encryption/blob/master/LICENSE)
+
 
 Copyright (c) 2021 Sean Bachiller
 
