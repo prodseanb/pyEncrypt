@@ -91,7 +91,7 @@ cprint(figlet_format('@author: prodseanb', font='mini'),
 while True:
 	#main block
 	print('\n' + 'Pick an encryption method: [aes, md5, base64, caesar, sha256, rot13, hex]')
-	print('Type X to exit.')
+	print("'x', 'exit', 'q', or 'quit' to exit.")
 	select = input('Select: ')
 
 	if select.lower() == 'md5':
@@ -107,17 +107,18 @@ while True:
 
 	elif select.lower() == 'caesar':
 		text_to_binary = input('Enter the text to be encrypted: ')
-		s = int(input("Enter the shift: "))
+		s = int(input("Enter the shift: ")) #how many shifts to encode in caesar
 		encrypt_text = caesar(text_to_binary, s)
 		print('\n', "{}".format(encrypt_text))
 
 	elif select.lower() == 'aes':
 		password = input('Pick a password: ')
 		text_to_aes = input('Enter the text to be encrypted: ')
-		encrypted_text = aes(f'{text_to_aes}', password)
+		encrypted_text = aes(f'{text_to_aes}', password) #encrypt in aes
 		print('\n', encrypted_text)
 
-	elif select.lower() == 'x':
+	#allow user to exit
+	elif select.lower() in ['x', 'exit', 'quit', 'q']:
 		exit()
 	else:
 		print('Invalid input, try again.')
