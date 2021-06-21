@@ -10,7 +10,7 @@ def main(option):
 		banner.head()
 		password = input('[*] Pick a password: ')
 		text_to_aes = input('[*] Enter the text to be encrypted: ')
-		encrypted_text = func.aes(f'{text_to_aes}', password) #encrypt in aes
+		encrypted_text = func.aes(f'{text_to_aes}', password) 
 		print('\n[*]', encrypted_text)
 
 	elif option == '--caesar':
@@ -40,14 +40,19 @@ def main(option):
 		banner.usage()
 
 if __name__ == '__main__':
+	options = ['--help', '-h', '--aes', '--caesar', '--md5', '--rot13', '--base64',
+				'--sha256', '--hex']
 	try:
 		option = sys.argv[1]
-		if platform.system() == 'Windows':
-			subprocess.call('cls', shell=True)
-		else:
-			subprocess.call('clear', shell=True)
+		if option in options: # handle invalid options
+			if platform.system() == 'Windows':
+				subprocess.call('cls', shell=True)
+			else:
+				subprocess.call('clear', shell=True)
 
-		main(option)
+			main(option)
+		else:
+			print('[!] Option not found. Please check out the documentation.')
+			raise IndexError
 	except IndexError: # short documentation here
 		banner.usage()
-# handle invalid options

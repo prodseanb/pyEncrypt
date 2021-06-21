@@ -26,7 +26,7 @@ def aes(text_to_aes, password):
 		'Tag': b64encode(tag).decode('utf-8')
 	}
 
-#encrypt in md5
+#md5 hash
 def md5():
 	banner.head()
 	text_to_md5 = input('[*] Enter the text to be hashed: ')
@@ -42,13 +42,14 @@ def rot13():
     result = encrypted_text(text_to_rot)[0]
     print('\n[*] Encrypted value:', result)
 
-# encrypt in base64
+# encode in base64
 def base64():
     banner.head()
     text_to_64 = input('[*] Enter the text to be encoded: ')
     encode = b64.b64encode(bytes(f'{text_to_64}', "utf-8"))
     print('\n[*] Encoded value:', encode.decode('utf-8'))
 
+# sha256 hash
 def sha256():
     banner.head()
     text_to_sha = input('[*] Enter the text to be hashed: ').encode()
@@ -67,6 +68,7 @@ def caesar(text_to_binary, s):
             encrypted_text = encrypted_text + chr((ord(text_to_binary[i])+s-97)%26+97)
     return encrypted_text
 
+# encode in hex
 def hex():
     banner.head()
     text_to_hex = input('[*] Enter the text to be encoded: ').encode('utf-8')

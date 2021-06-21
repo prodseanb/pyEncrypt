@@ -39,7 +39,7 @@ pyEncrypt - Data encryption. v1.2 (https://github.com/prodseanb/pyEncrypt)
 Usage: 
 	python3 run.py [option]
 	Only one parameter is required.
-        -h / --help: Display this manual.
+        -h / --help: Display this documentation.
 	--aes: AES encryption
 	--md5: MD5 hash
 	--sha256: SHA256 hash
